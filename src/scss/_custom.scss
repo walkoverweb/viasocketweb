@@ -1,0 +1,43 @@
+.btn {
+    @apply rounded-sm;
+    font-weight: 400;
+}
+
+.btn-md {
+    @apply px-6 py-3 h-fit min-h-0 rounded-[2px];
+    @media only screen and (max-width: 740px) {
+        @apply px-4 py-2 h-fit min-h-0 rounded-[2px];
+    }
+}
+
+.btn-accent {
+    @apply text-white;
+
+    & {
+        span {
+            color: white !important;
+        }
+    }
+}
+
+.btn-outline:hover {
+    color: white;
+}
+.container {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (max-width: 1280px) {
+        @apply px-12;
+    }
+    @media only screen and (max-width: 780px) {
+        @apply px-6;
+    }
+    @media only screen and (max-width: 480px) {
+        @apply px-4;
+    }
+}
+
+.text-6xl {
+    line-height: 80px !important;
+}

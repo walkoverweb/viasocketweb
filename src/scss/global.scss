@@ -1,0 +1,57 @@
+//tailwind imports
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//check import file for imports
+@import 'import';
+
+.casestudy_img {
+    // height: 295px!important;
+    // overflow: hidden;
+    img {
+        height: 100%;
+        max-width: none;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.signup_img {
+    // height: 400px !important;
+    img {
+        height: 100%;
+    }
+}
+.pagination {
+    display: flex;
+    @apply gap-3 mx-auto items-center;
+
+    .active {
+        @apply bg-slate-300 px-1 rounded-sm;
+    }
+}
+
+// temp{
+#interfaceEmbed {
+    opacity: 0;
+}
+.form-parent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    padding: 28px 0px;
+    z-index: 999999;
+    box-sizing: border-box;
+}
+
+.loginBtn_google {
+    button {
+        margin: 0px !important;
+    }
+}
