@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Footer from '@/components/footer/footer'
 import { useEffect, useLayoutEffect } from 'react'
 
-export default function MyApp({ Component, pageProps, pagesData }) {
+export default function MyApp({ Component, pageProps }) {
     const router = useRouter()
     var browserPath = router.asPath
     useLayoutEffect(() => {
