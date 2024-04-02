@@ -1,4 +1,8 @@
 //fetch data from DBDash
+export const config = {
+    runtime: 'experimental-edge',
+}
+
 export const getDbdashData = async (tableName) => {
     const apiUrl = `https://dbdash-backend-h7duexlbuq-el.a.run.app/65d2ed33fa9d1a94a5224235/${tableName}`
     const authKey = 'keyJZz-15yE8MAp' // Replace 'AUTH_TOKEN' with your actual authentication token
